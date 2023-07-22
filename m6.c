@@ -1,0 +1,35 @@
+#include<stdio.h>
+#define n 5
+int a[n],top = -1;
+ void display()
+{
+    int i;
+    for(i=0;i<top;i++)
+    {
+        printf("%d",a[i]);
+        
+    }
+}
+int insert(int value)
+{
+    if(top>n-1)
+    {
+        printf("array is full........\n");
+
+    }
+    else
+    {
+        top++;
+        a[top] = value;
+    }
+}
+int main()
+{
+    insert(10);
+    insert(20);
+    insert(30);
+    insert(40);
+    insert(50);
+    insert(60);
+    display();
+}

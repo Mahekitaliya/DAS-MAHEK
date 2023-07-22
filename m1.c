@@ -17,23 +17,23 @@ int main()
 {
     int a = 1, b = 1,c = 1, d;
 
-    d = a && --b || ++c; // 1010  1000 1011 0111 1001 1020           
+    d = a && --b || ++c;           
     printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
-    // d = a || --b && ++c; //         
+    // d = a || --b && ++c; 
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
-    // d = a || --b || ++c; // 1111        
+    // d = a || --b || ++c;  
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
-    // d = --a || --b || ++c; // 0021        
+    // d = --a || --b || ++c;       
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
-    // d = --a || ++b || ++c; // 0211        
+    // d = --a || ++b || ++c;       
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
-    // d = --a && ++b && ++c; // 0110        
+    // d = --a && ++b && ++c;       
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
     // d = a && --b && --c;        
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
-    // d = a && --b && c;   // 1010     
+    // d = a && --b && c;   
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
-    // d = a && b && c;   //     
+    // d = a && b && c;  
     // printf("a: %d, b: %d, c: %d, d: %d\n",a,b,c,d);
 }
     
