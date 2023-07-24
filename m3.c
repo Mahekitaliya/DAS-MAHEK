@@ -5,7 +5,7 @@ int main()
     printf("enter n :");
     scanf("%d",&n);
     printf("enter m :");
-    sacnf("%d",&n);
+    scanf("%d",&n);
     int a[n],b[n],c[n],i;
     for(i=0;i<n;i++)
     {
@@ -15,5 +15,17 @@ int main()
 
     }
     k = i;
-    
+    for(i=0;i<m;i++)
+    {
+        printf("Enter ellement 2array :");
+        scanf("%d",&b[i]);
+        c[k++] = b[i];
+        
+    }
+    printf("marge array : \n");
+    for(i= 0;i<k;i++)
+    {
+        printf("%d\t",c[i]);
+
+    }
 }

@@ -12,4 +12,4 @@ int main(){
         printf("\t");
     }
     printf("%d \t %d",a[4],a[0]);
-}
+}c
