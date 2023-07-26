@@ -12,11 +12,10 @@ int binarysearch(int a[],int l,int h,int x)
         }
         else if(a[mid]<x)
         {
-             l = mid +l ; 
+             l = mid + l ; 
         }
         else{
             h = mid - l;
-        
         }
     
     }
