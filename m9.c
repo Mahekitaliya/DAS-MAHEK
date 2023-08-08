@@ -1,39 +1,33 @@
-
 #include<stdio.h>
+#define n 10
 #include<stdlib.h>
-
-#define n 5
-int a[n],i;
-
-
-int find_linear(int z){
-
-    for(i=0;i<n;i++){
-    
-        if(z==a[i])
-        return i+1;
-    }
-    return -1;
+int lin(int a[],int e)
+{
+int i;
+for(i=0;i<n;i++)
+{
+if(e==a[i])
+return i;
+}
+return -1;
+}
+int main()
+{
+int i,a[n],e;
+printf("array element:");
+for(i=0;i<n;i++)
+{
+a[i]=rand()%100;
+printf("  %d  ",a[i]);
+}
+printf("\nenter search element:");
+scanf("%d",&e);
+int m=lin(a,e);
+if(m==-1)
+printf("not found");
+else
+{
+printf("array position number:%d",m);
+}
 }
 
-int main(){
-    int m; 
-    for(i=0;i<n;i++){
-    a[i]=rand()%100;
-    printf("\n%d:[%d]",i+1,a[i]);
-}
-
-    printf("\n\nenter value for search:");
-    scanf("%d",&m);
-
-     int J = find_linear(m);
-
-        
-    if(J==-1)
-    {
-       printf("\nYour Value in Array of Index Num : %d",i+1);
-    }
-    else{
-        printf("\nYour Element Not Found..");
-    }
-}
